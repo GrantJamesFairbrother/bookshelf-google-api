@@ -16,7 +16,7 @@ const BookShelf = () => {
   return (
     <>
       {shelves.map(shelf => (
-        <div className={'row bg-light'} key={shelf.shelf}>
+        <div className={'row'} key={shelf.shelf}>
           <div className='col-12 '>
             <h2 className='pb-1' style={{ borderBottom: '2px solid #000' }}>
               {shelf.shelfTitle}
