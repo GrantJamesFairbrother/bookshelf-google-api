@@ -4,10 +4,13 @@ import './index.css';
 import App from './components/App';
 import 'bootstrap/dist/css/bootstrap.css';
 import BookState from './context/BookState';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 ReactDOM.render(
   <BookState>
-    <App />
+    <Router>
+      <App />
+    </Router>
   </BookState>,
   document.getElementById('root')
 );

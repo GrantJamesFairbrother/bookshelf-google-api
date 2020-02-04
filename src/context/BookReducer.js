@@ -4,7 +4,8 @@ export default (state, action) => {
   switch (action.type) {
     case GET_BOOKS:
       return {
-        ...state
+        ...state,
+        searchResults: action.payload
       };
 
     default:
